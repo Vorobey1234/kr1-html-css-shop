@@ -1,27 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   line-height: 1.5;
+  color: #222222;
+  background-color: #ffffff;
 }
 
-header,
-main,
-footer {
+header, main, footer {
   padding: 20px;
 }
 
-header {
-  background-color: #f2f2f2;
+header { background-color: #f2f2f2; }
+footer { background-color: #f2f2f2; }
+
+.site-header {
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-footer {
-  background-color: #f2f2f2;
+.site-logo {
+  font-weight: bold;
+  text-decoration: none;
+  color: #222222;
 }
 
-section {
-  margin-bottom: 24px;
+.site-nav__list {
+  padding: 0;
+  margin: 16px 0 0;
+  list-style: none;
 }
 
-section h2 {
-  margin-top: 0;
+.site-nav__list li { margin-bottom: 8px; }
+
+.site-nav__list a {
+  color: #0057b8;
+  text-decoration: none;
+}
+
+.site-nav__list a:hover { text-decoration: underline; }
+
+.hero {
+  max-width: 1100px;
+  margin: 0 auto 32px;
+  padding: 32px 20px;
+  background-color: #eef5ff;
+  border-radius: 12px;
+}
+
+.section {
+  max-width: 1100px;
+  margin: 0 auto 32px;
+}
+
+.section h2 { margin-top: 0; }
+
+.product-card {
+  margin-bottom: 16px;
+  padding: 16px;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+.product-card h3 { margin-top: 0; }
+
+.button {
+  display: inline-block;
+  padding: 10px 16px;
+  color: #ffffff;
+  background-color: #0057b8;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.button:hover { background-color: #003f86; }
+
+.aside-info {
+  max-width: 1100px;
+  margin: 0 auto 32px;
+  padding: 16px;
+  border-left: 4px solid #0057b8;
+  background-color: #f7f7f7;
+}
+
+.order-dialog {
+  width: min(100% - 32px, 560px);
+  padding: 24px;
+  border: none;
+  border-radius: 12px;
+}
+
+.order-dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.form-field { margin-bottom: 16px; }
+
+.form-field label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  font: inherit;
+}
+
+.form-field input[type="checkbox"] { width: auto; }
+
+.form-field small {
+  display: block;
+  margin-top: 4px;
+  color: #666666;
+}
+
+.form-field input:focus-visible,
+.form-field select:focus-visible,
+.form-field textarea:focus-visible,
+.form-actions button:focus-visible {
+  outline: 2px solid #0057b8;
+  outline-offset: 2px;
+}
+
+[aria-invalid="true"] {
+  border-color: #b00020;
+}
+
+.form-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.success-message {
+  max-width: 1100px;
+  margin: 24px auto;
+  padding: 16px;
+  border-left: 4px solid #168a2f;
+  background-color: #eefaf0;
 }
