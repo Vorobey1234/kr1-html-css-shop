@@ -1,4 +1,4 @@
-﻿/* ===============================
+/* ===============================
    1. Переменные проекта
    =============================== */
 :root {
@@ -103,6 +103,31 @@ button:disabled {
 .button:hover { background-color: var(--color-primary-dark); }
 .button:active { transform: translateY(1px); }
 .button:disabled { background-color: var(--color-muted); }
+
+.breadcrumbs {
+  max-width: var(--container-width);
+  margin: 0 auto var(--space-md);
+  font-size: 14px;
+  color: var(--color-muted);
+}
+.breadcrumbs a { color: var(--color-primary); }
+.breadcrumbs span + span::before {
+  content: " / ";
+  color: var(--color-muted);
+}
+:target { scroll-margin-top: var(--space-lg); }
+:target:not(.order-dialog) { animation: target-highlight 1.2s ease-out; }
+@keyframes target-highlight {
+  from { background-color: var(--color-surface-accent); }
+  to { background-color: transparent; }
+}
+.page-intro { margin-bottom: var(--space-lg); }
+.contact-card {
+  padding: var(--space-lg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background-color: var(--color-surface-soft);
+}
 
 /* ===============================
    4. Компоненты страницы
