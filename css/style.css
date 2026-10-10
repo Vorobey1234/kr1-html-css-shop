@@ -119,11 +119,10 @@ button:disabled {
   content: " / ";
   color: var(--color-muted);
 }
-:target { scroll-margin-top: var(--space-lg); }
-:target:not(.order-dialog) { animation: target-highlight 1.2s ease-out; }
-@keyframes target-highlight {
-  from { background-color: var(--color-surface-accent); }
-  to { background-color: transparent; }
+:target {
+  scroll-margin-top: var(--space-lg);
+  outline: 2px dashed var(--color-primary);
+  outline-offset: 4px;
 }
 .page-intro { margin-bottom: var(--space-lg); }
 .contact-card {
@@ -206,6 +205,11 @@ button:disabled {
   background-color: var(--color-bg);
 }
 .product-card h3 { margin-top: 0; }
+.product-card { transition: border-color 160ms ease, box-shadow 160ms ease; }
+.product-card:hover {
+  border-color: var(--color-primary);
+  box-shadow: 0 4px 16px rgb(34 34 34 / 10%);
+}
 .product-card__button {
   align-self: flex-start;
   margin-top: auto;
@@ -246,6 +250,9 @@ button:disabled {
   border: 1px solid var(--color-input-border);
   border-radius: var(--radius-sm);
   font: inherit;
+}
+.form-field :is(input:not([type="checkbox"]), select, textarea):hover {
+  border-color: var(--color-primary);
 }
 .form-field input[type="checkbox"] { width: auto; }
 .form-field small {
