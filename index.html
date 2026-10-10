@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Учебный интернет-магазин: каталог товаров, преимущества проекта и форма заявки.">
 <title>Учебный интернет-магазин</title>
 <link rel="stylesheet" href="css/style.css">
 <script src="js/main.js" defer></script>
@@ -47,6 +48,7 @@
 
 <section class="section" id="popular">
 <h2>Популярные товары</h2>
+<div class="products-grid">
 <article class="product-card">
 <h3>Товар 1</h3>
 <p>Краткое описание учебного товара.</p>
@@ -65,6 +67,7 @@
 <p>Цена: 2000 руб.</p>
 <button class="button product-card__button" type="button" data-product="Товар 3">Заказать</button>
 </article>
+</div>
 </section>
 
 <aside class="aside-info">
@@ -75,6 +78,12 @@
 БЭМ-структура и адаптивная версия сайта.
 </p>
 </aside>
+
+<section class="section contact-card" id="contacts" aria-labelledby="contact-cta-title">
+<h2 id="contact-cta-title">Обратная связь</h2>
+<p>Оставьте заявку, и мы свяжемся с вами по выбранному вопросу.</p>
+<button class="button" id="open-contact-dialog" type="button">Открыть форму заявки</button>
+</section>
 </main>
 
 <dialog class="order-dialog" id="order-dialog" aria-labelledby="order-dialog-title">
@@ -136,7 +145,7 @@
 Форма успешно отправлена!
 </p>
 
-<footer id="contacts">
+<footer>
 <p>&copy; 2026 Учебный проект. Все права защищены.</p>
 <p>Дисциплина: Фронтенд и бэкенд разработка</p>
 </footer>

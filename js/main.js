@@ -11,6 +11,14 @@ orderButtons.forEach((button) => {
   });
 });
 
+const contactDialogButton = document.getElementById('open-contact-dialog');
+if (contactDialogButton) {
+  contactDialogButton.addEventListener('click', () => {
+    selectedProductInput.value = '';
+    orderDialog.showModal();
+  });
+}
+
 closeDialogButton.addEventListener('click', () => {
   orderDialog.close();
 });
