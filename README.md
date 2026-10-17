@@ -11,7 +11,7 @@
 - contacts.html — контактная информация;
 - css/style.css — стили, CSS-переменные, Flexbox, Grid и BEM-компоненты;
 - js/main.js — обработка модальной формы, валидация и сообщение об отправке;
-- images/ — папка для изображений;
+- images/ — иллюстрация товара product-1.svg;
 - sitemap.xml — карта страниц;
 - .gitignore — исключения Git.
 
@@ -26,7 +26,7 @@ HTML5, CSS3, JavaScript, Git, GitHub Pages.
 - BEM-блоки: site-header, site-nav, breadcrumbs, hero, products-grid, product-card, catalog-layout, catalog-filters, order-dialog, order-form, button, site-footer.
 - Таблица характеристик товара с подписью, заголовком и данными.
 - Форма заявки с полями имени, e-mail, телефона, темы, товара, комментария и согласия.
-- CSS-переменные, адаптивная сетка, состояния наведения и фокуса.
+- CSS-переменные, позиционирование relative/absolute/sticky, состояния наведения и фокуса.
 
 ## История выполнения
 
@@ -39,6 +39,10 @@ HTML5, CSS3, JavaScript, Git, GitHub Pages.
 - Практическая работа 7: классы компонентов переведены на методологию BEM.
 - Практическая работа 8: добавлены страница товара, таблица характеристик и отдельная страница заявки; проведена финальная проверка структуры и ссылок.
 
+## Просмотр проекта
+
+Откройте GitHub Pages по ссылке ниже. Для локального просмотра скачайте или клонируйте репозиторий и откройте index.html в браузере.
+
 ## Публикация
 
 GitHub Pages: https://vorobey1234.github.io/kr1-html-css-shop/
@@ -47,4 +51,3 @@ GitHub Pages: https://vorobey1234.github.io/kr1-html-css-shop/
 
 ФИО: Пакин Андрей Андреевич
 Группа: ЭФБО-14-25
-
