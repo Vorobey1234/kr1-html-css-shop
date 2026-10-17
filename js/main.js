@@ -1,4 +1,11 @@
-﻿const orderDialog = document.getElementById('order-dialog');
+﻿const requestedProduct = new URLSearchParams(window.location.search).get('product');
+const productSelect = document.getElementById('order-product');
+if (productSelect && ['1', '2', '3'].includes(requestedProduct)) {
+  productSelect.selectedIndex = Number(requestedProduct);
+  document.getElementById('order-topic').value = 'product';
+}
+
+const orderDialog = document.getElementById('order-dialog');
 const closeDialogButton = document.getElementById('close-order-dialog');
 const selectedProductInput = document.getElementById('selected-product');
 

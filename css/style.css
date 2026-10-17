@@ -131,6 +131,8 @@ button:disabled { opacity: 0.6; cursor: not-allowed; }
 }
 .product-card--featured { border-color: var(--color-primary); }
 .product-card__title { margin: 0; }
+.product-card__link { color: inherit; text-decoration: none; }
+.product-card__link:hover { text-decoration: underline; }
 .product-card__description { margin: 0; }
 .product-card__price { margin: 0; font-weight: 700; }
 .product-card__button { align-self: flex-start; margin-top: auto; }
