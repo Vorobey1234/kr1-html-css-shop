@@ -17,13 +17,6 @@ if (orderDialog && selectedProductInput) {
     });
   });
 
-  const contactDialogButton = document.getElementById('open-contact-dialog');
-  if (contactDialogButton) {
-    contactDialogButton.addEventListener('click', () => {
-      selectedProductInput.value = '';
-      orderDialog.showModal();
-    });
-  }
 
   if (closeDialogButton) {
     closeDialogButton.addEventListener('click', () => orderDialog.close());
@@ -55,5 +48,6 @@ if (orderForm && successMessage) {
     successMessage.hidden = false;
     orderForm.reset();
     if (orderDialog?.open) orderDialog.close();
+    successMessage.scrollIntoView({ block: 'nearest' });
   });
 }
