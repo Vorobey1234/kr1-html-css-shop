@@ -57,7 +57,7 @@ textarea:focus-visible {
 }
 button { font: inherit; cursor: pointer; }
 button:disabled { opacity: 0.6; cursor: not-allowed; }
-:target { scroll-margin-top: var(--space-lg); outline: 2px dashed var(--color-primary); outline-offset: 4px; }
+:target { scroll-margin-top: calc(var(--space-xl) * 5); outline: 2px dashed var(--color-primary); outline-offset: 4px; }
 
 /* ===============================
    3. Блоки сайта и навигация
