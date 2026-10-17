@@ -6,7 +6,6 @@
 <meta name="description" content="Каталог товаров учебного интернет-магазина.">
 <title>Каталог товаров — Учебный интернет-магазин</title>
 <link rel="stylesheet" href="css/style.css">
-<script src="js/main.js" defer></script>
 </head>
 <body>
 <header class="site-header">
@@ -41,7 +40,7 @@
 <form class="filters-form" action="catalog.html" method="get">
 <fieldset class="filters-form__group">
 <legend class="filters-form__legend">Категория</legend>
-<label class="filters-form__label"><input class="filters-form__checkbox" type="checkbox" name="category" value="all" checked> Все товары</label>
+<label class="filters-form__label"><input class="filters-form__checkbox" type="checkbox" name="category" value="all"> Все товары</label>
 <label class="filters-form__label"><input class="filters-form__checkbox" type="checkbox" name="category" value="popular"> Популярные</label>
 <label class="filters-form__label"><input class="filters-form__checkbox" type="checkbox" name="category" value="new"> Новинки</label>
 </fieldset>
@@ -52,42 +51,31 @@
 <label class="filters-form__label" for="price-to">До</label>
 <input class="filters-form__input" id="price-to" name="price-to" type="number" min="0" placeholder="5000">
 </fieldset>
-<fieldset class="filters-form__group">
-<legend class="filters-form__legend">Сортировка</legend>
-<label class="filters-form__label" for="price-sort">По цене</label>
-<select class="filters-form__select" id="price-sort" name="sort">
-<option value="default">По умолчанию</option>
-<option value="price-asc">Сначала дешевле</option>
-<option value="price-desc">Сначала дороже</option>
-</select>
-</fieldset>
 <button class="button button--primary filters-form__button" type="submit">Применить</button>
-<a class="button button--secondary filters-form__button" href="catalog.html">Сбросить</a>
 </form>
 </aside>
 <section class="catalog-products" aria-labelledby="catalog-products-title">
 <h2 class="catalog-products__title" id="catalog-products-title">Список товаров</h2>
 <div class="products-grid">
-<article class="product-card product-card--featured" data-price="1000" data-category="popular">
+<article class="product-card product-card--featured">
 <h3 class="product-card__title"><a class="product-card__link" href="product.html">Товар 1</a></h3>
 <p class="product-card__description">Краткое описание учебного товара.</p>
 <p class="product-card__price">Цена: 1000 руб.</p>
 <a class="button button--primary product-card__button" href="product.html">Подробнее</a>
 </article>
-<article class="product-card" data-price="1500" data-category="new">
+<article class="product-card">
 <h3 class="product-card__title"><a class="product-card__link" href="product-2.html">Товар 2</a></h3>
 <p class="product-card__description">Краткое описание учебного товара.</p>
 <p class="product-card__price">Цена: 1500 руб.</p>
 <a class="button button--primary product-card__button" href="product-2.html">Подробнее</a>
 </article>
-<article class="product-card" data-price="2000" data-category="discount">
+<article class="product-card">
 <h3 class="product-card__title"><a class="product-card__link" href="product-3.html">Товар 3</a></h3>
 <p class="product-card__description">Краткое описание учебного товара.</p>
 <p class="product-card__price">Цена: 2000 руб.</p>
 <a class="button button--primary product-card__button" href="product-3.html">Подробнее</a>
 </article>
 </div>
-<p class="catalog-products__empty" role="status" hidden>По выбранным условиям товаров не найдено.</p>
 </section>
 </section>
 </main>
