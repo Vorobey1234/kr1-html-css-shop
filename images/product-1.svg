@@ -1,0 +1,9 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" role="img" aria-labelledby="title description">
+  <title id="title">Товар 1</title>
+  <desc id="description">Иллюстрация коробки учебного товара на синем фоне.</desc>
+  <rect width="480" height="320" rx="24" fill="#eef5ff"/>
+  <path d="M172 98 240 62l68 36v124l-68 36-68-36z" fill="#fff" stroke="#0057b8" stroke-width="6" stroke-linejoin="round"/>
+  <path d="m172 98 68 38 68-38M240 136v122" fill="none" stroke="#0057b8" stroke-width="6" stroke-linejoin="round"/>
+  <path d="m215 75 68 37v36l-68-37z" fill="#dbeaff"/>
+  <text x="240" y="294" fill="#222" font-family="Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle">ТОВАР 1</text>
+</svg>
