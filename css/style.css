@@ -43,6 +43,7 @@ body {
 }
 header, main, footer { padding: var(--space-lg); }
 header, footer { background-color: var(--color-surface); }
+.site-header { position: sticky; top: 0; z-index: 10; }
 a { color: var(--color-primary); }
 a:hover { color: var(--color-primary-dark); }
 a:focus-visible,
@@ -210,10 +211,22 @@ button:disabled { opacity: 0.6; cursor: not-allowed; }
 }
 .filters-form__input:hover { border-color: var(--color-primary); }
 .product-detail {
+  position: relative;
   max-width: var(--container-width);
   margin: 0 auto var(--space-xl);
 }
-.product-detail__title { margin-top: 0; }
+.product-detail__title { margin-top: 0; padding-right: 140px; }
+.product-detail__badge {
+  position: absolute;
+  top: var(--space-lg);
+  right: var(--space-lg);
+  z-index: 1;
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-sm);
+  color: var(--color-white);
+  background-color: var(--color-primary);
+}
+.product-detail__image { display: block; width: min(100%, 480px); height: auto; margin: var(--space-lg) 0; border-radius: var(--radius-md); }
 .product-detail__description { max-width: 70ch; }
 .product-detail__price { font-weight: 700; }
 .product-table {
@@ -261,6 +274,7 @@ button:disabled { opacity: 0.6; cursor: not-allowed; }
 .order-dialog {
   width: min(100% - var(--space-xl), 560px);
   max-height: calc(100% - var(--space-xl));
+  z-index: 1000;
   padding: var(--space-lg);
   overflow-y: auto;
   border: 1px solid var(--color-border);
@@ -268,7 +282,7 @@ button:disabled { opacity: 0.6; cursor: not-allowed; }
   color: var(--color-text);
   background-color: var(--color-bg);
 }
-.order-dialog::backdrop { background-color: var(--color-backdrop); }
+.order-dialog::backdrop { z-index: 999; background-color: var(--color-backdrop); }
 .order-dialog__title { margin-top: 0; }
 .order-form { display: grid; gap: var(--space-md); }
 .order-form__field { display: grid; gap: var(--space-xs); }
@@ -311,13 +325,4 @@ button:disabled { opacity: 0.6; cursor: not-allowed; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: 0.01ms !important; }
-}
-
-@media (max-width: 760px) {
-  .products-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .catalog-layout { grid-template-columns: 1fr; grid-template-areas: "filters" "products"; }
-}
-
-@media (max-width: 520px) {
-  .products-grid { grid-template-columns: 1fr; }
 }
