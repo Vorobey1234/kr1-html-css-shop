@@ -139,7 +139,7 @@ button:disabled { opacity: 0.6; cursor: not-allowed; }
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: var(--space-md);
 }
-.products-grid--catalog { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.products-grid--catalog { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: minmax(200px, 1fr); overflow-x: auto; }
 .product-card {
   position: relative;
   display: flex;
