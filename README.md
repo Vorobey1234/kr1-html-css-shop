@@ -27,6 +27,7 @@ HTML5, CSS3, JavaScript, Git, GitHub Pages.
 
 - Семантическая разметка и общая навигация по страницам.
 - Сетка товаров на CSS Grid и компоненты на Flexbox.
+- Фильтры каталога по категории и диапазону цены, сортировка цены в обоих направлениях; условия сохраняются в URL.
 - BEM-блоки: site-header, site-nav, breadcrumbs, hero, products-grid, product-card, catalog-layout, catalog-filters, order-dialog, order-form, button, site-footer.
 - Таблица характеристик товара с подписью, заголовком и данными.
 - Форма заявки с полями имени, e-mail, телефона, темы, товара, комментария и согласия.

@@ -125,6 +125,7 @@ button:disabled { opacity: 0.6; cursor: not-allowed; }
   background-color: var(--color-bg);
   transition: border-color 160ms ease, box-shadow 160ms ease;
 }
+.product-card[hidden] { display: none; }
 .product-card:hover {
   border-color: var(--color-primary);
   box-shadow: 0 4px 16px rgb(34 34 34 / 10%);
@@ -205,14 +206,16 @@ button:disabled { opacity: 0.6; cursor: not-allowed; }
 .filters-form__legend { font-weight: 700; }
 .filters-form__label { display: block; margin-bottom: var(--space-sm); }
 .filters-form__checkbox { margin-right: var(--space-xs); }
-.filters-form__input {
+.filters-form__input,
+.filters-form__select {
   width: 100%;
   padding: var(--space-sm) 10px;
   border: 1px solid var(--color-input-border);
   border-radius: var(--radius-sm);
   font: inherit;
 }
-.filters-form__input:hover { border-color: var(--color-primary); }
+.filters-form__input:hover,
+.filters-form__select:hover { border-color: var(--color-primary); }
 .product-detail {
   max-width: var(--container-width);
   margin: 0 auto var(--space-xl);
