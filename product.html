@@ -32,11 +32,14 @@
 <span class="breadcrumbs__current" aria-current="page">Товар 1</span>
 </nav>
 <article class="product-detail">
-<h1 class="product-detail__title">Товар 1</h1>
-<span class="product-detail__badge">Хит продаж</span>
-<img class="product-detail__image" src="images/product-1.svg" alt="Иллюстрация товара 1 — товар в фирменной упаковке" width="480" height="320">
-<p class="product-detail__description">Учебный товар интернет-магазина. Эта страница содержит описание, стоимость и основные характеристики товара.</p>
-<p class="product-detail__price">Цена: 1000 руб.</p>
+<div class="product-card product-card--featured">
+<span class="product-card__badge">Хит продаж</span>
+<img class="product-card__image" src="images/product-1.svg" alt="Иллюстрация товара 1 — товар в фирменной упаковке" width="480" height="320">
+<h1 class="product-card__title product-card__title--badged">Товар 1</h1>
+<p class="product-card__description">Учебный товар интернет-магазина. Эта страница содержит описание, стоимость и основные характеристики товара.</p>
+<p class="product-card__price">Цена: 1000 руб.</p>
+<a class="button button--primary product-card__button" href="order.html">Оставить заявку</a>
+</div>
 <table class="product-table">
 <caption class="product-table__caption">Характеристики товара</caption>
 <thead>
@@ -48,7 +51,6 @@
 <tr><th class="product-table__cell product-table__cell--heading" scope="row">Стоимость</th><td class="product-table__cell">1000 руб.</td></tr>
 </tbody>
 </table>
-<a class="button button--primary" href="order.html">Оставить заявку</a>
 </article>
 </main>
 <footer class="site-footer">
